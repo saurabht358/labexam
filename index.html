@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00adb5;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #00adb5;
+        }
+
+        .projects {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1 1 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        button {
+            background: #00adb5;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #007b83;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <p>Web Developer | Designer | Learner</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate web developer who loves creating clean and user-friendly websites. I enjoy learning new technologies and improving my skills every day.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>A simple website built using HTML and CSS.</p>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>A responsive design project for mobile and desktop.</p>
+            </div>
+            <div class="card">
+                <h3>Project 3</h3>
+                <p>A JavaScript-based interactive app.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: example@email.com</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message"></p>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 My Portfolio | All Rights Reserved</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerText = "Thanks for visiting my portfolio!";
+    }
+</script>
+
+</body>
+</html>
