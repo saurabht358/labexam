@@ -1,21 +1,13 @@
 pipeline {
     agent any
 
-
     stages {
 
-        stage('Checkout') {
+        stage('ProjectBuilding') {
             steps {
-                git branch: 'master', url: 'https://github.com/saurabht358/labexam.git'
+                echo 'Building Project...'
             }
         }
 
-        stage('Build and Deploy') {
-            steps {
-                echo Project Building...
-            }
-        }
-
-         
     }
 }
