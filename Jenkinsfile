@@ -12,7 +12,7 @@ pipeline {
 
         stage('Build and Deploy') {
             steps {
-                echo Project Building...
+                echo ProjectBuilding
             }
         }
 
